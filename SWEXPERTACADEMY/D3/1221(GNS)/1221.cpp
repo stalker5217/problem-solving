@@ -13,7 +13,7 @@ int main() {
 	cin >> T;
 
 
-	for(int test_case = 1 ; test_case <= 1 ; ++test_case){
+	for(int test_case = 1 ; test_case <= T ; ++test_case){
 		string strNum;
 		int N;
 
@@ -24,43 +24,43 @@ int main() {
 		for(int i = 0 ; i < N ; i++){
 			cin >> strNum;
 
-			if(strNum.compare("ZRO")){
+			if(strNum.compare("ZRO") == 0){
 				arr.push_back(0);
 			}
 
-			else if(strNum.compare("ONE")){
+			else if(strNum.compare("ONE") == 0){
 				arr.push_back(1);
 			}
 
-			else if(strNum.compare("TWO")){
+			else if(strNum.compare("TWO") == 0){
 				arr.push_back(2);
 			}
 
-			else if(strNum.compare("THR")){
+			else if(strNum.compare("THR") == 0){
 				arr.push_back(3);
 			}
 
-			else if(strNum.compare("FOR")){
+			else if(strNum.compare("FOR") == 0){
 				arr.push_back(4);
 			}
 
-			else if(strNum.compare("FIV")){
+			else if(strNum.compare("FIV") == 0){
 				arr.push_back(5);
 			}
 
-			else if(strNum.compare("SIX")){
+			else if(strNum.compare("SIX") == 0){
 				arr.push_back(6);
 			}
 
-			else if(strNum.compare("SVN")){
+			else if(strNum.compare("SVN") == 0){
 				arr.push_back(7);
 			}
 
-			else if(strNum.compare("EGT")){
+			else if(strNum.compare("EGT") == 0){
 				arr.push_back(8);
 			}
 
-			else if(strNum.compare("NIN")){
+			else if(strNum.compare("NIN") == 0){
 				arr.push_back(9);
 			}
 		}
