@@ -7,7 +7,7 @@
 using namespace std;
 
 int main() {
-	freopen("GNS_test_input.txt", "r", stdin);
+	//freopen("GNS_test_input.txt", "r", stdin);
 
 	int T;
 	cin >> T;
