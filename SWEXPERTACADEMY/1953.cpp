@@ -15,7 +15,7 @@ int remain_time[50][50];
 enum { TOP = 0, BOTTOM, LEFT, RIGHT };
 
 void find_location(int x, int y, int remain, int whereBy) {
-	    /*
+	/*
 		    1 = 상, 하, 좌, 우
 			    2 = 상, 하
 				    3 = 좌, 우
