@@ -7,7 +7,6 @@
 using namespace std;
 
 int main() {
-	freopen("input.txt", "r", stdin);
 	int result = 0;
 	int dragon = 0;
 	cin >> dragon;
@@ -42,7 +41,7 @@ int main() {
 				topVal++;
 				if(topVal == 4){
 					topVal = 0;
-				}
+				}  
 
 				dirStack.push_back(topVal);
 			}

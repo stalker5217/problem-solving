@@ -8,4 +8,9 @@
         //"cpp": "cd $dirWithoutTrailingSlash && g++ $fileName -g -o $fileNameWithoutExt && ./$fileNameWithoutExt.exe", 
     },
     "code-runner.runInTerminal": true,
+    "files.associations": {
+        "deque": "cpp",
+        "xlocale": "cpp",
+        "vector": "cpp"
+    },
 }
