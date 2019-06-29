@@ -12,6 +12,7 @@
         "deque": "cpp",
         "xlocale": "cpp",
         "vector": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "utility": "cpp"
     },
 }
