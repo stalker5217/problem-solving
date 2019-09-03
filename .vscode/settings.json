@@ -13,6 +13,8 @@
         "xlocale": "cpp",
         "vector": "cpp",
         "iostream": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "ios": "cpp",
+        "xiosbase": "cpp"
     },
 }
