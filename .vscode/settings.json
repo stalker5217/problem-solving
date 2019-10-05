@@ -15,6 +15,7 @@
         "iostream": "cpp",
         "utility": "cpp",
         "ios": "cpp",
-        "xiosbase": "cpp"
+        "xiosbase": "cpp",
+        "functional": "cpp"
     },
 }
