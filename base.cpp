@@ -14,7 +14,8 @@ int main(){
     cin.tie(NULL);
 
     // Algorithm
-    LOG("test");
+    if(DEBUG)
+        LOG("test");
     
     return 0;
 }
