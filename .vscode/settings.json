@@ -16,6 +16,7 @@
         "utility": "cpp",
         "ios": "cpp",
         "xiosbase": "cpp",
-        "functional": "cpp"
+        "functional": "cpp",
+        "xstring": "cpp"
     },
 }
