@@ -35,12 +35,12 @@ int main(){
 }
 
 bool compare(pair<int, int> a, pair<int, int> b){
-	if(a.first < b.first)
+	if(a.second < b.second)
 		return true;
-	else if(a.first > b.first)
+	else if(a.second > b.second)
 		return false;
 	else{
-		if(a.second < b.second){
+		if(a.first < b.first){
 			return true;
 		}
 		else{
