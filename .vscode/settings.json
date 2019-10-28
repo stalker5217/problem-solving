@@ -17,6 +17,7 @@
         "ios": "cpp",
         "xiosbase": "cpp",
         "functional": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "algorithm": "cpp"
     },
 }
