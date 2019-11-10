@@ -20,4 +20,5 @@
         "xstring": "cpp",
         "algorithm": "cpp"
     },
+    "files.autoGuessEncoding": true,
 }
