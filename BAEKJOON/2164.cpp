@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <cstring>
-#include <deque>
+#include <unordered_map>
 #include <algorithm>
 #include <functional>
 
@@ -13,25 +13,25 @@ int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    int n;
+    unordered_map<int, int> cardCnt;
+	int n;
 	cin >> n;
-	deque<int> card;
-	for(int i = 1 ; i <= n ; i++){
-		card.push_back(i);
+	for(int i = 0 ; i < n ; i++){
+		int num;
+		cin >> num;
+		cardCnt[num]++;
 	}
 
-	while(true){
-		if(card.size() <= 1){
-			break;
+	int m;
+	cin >> m;
+	for(int i = 0 ; i < m ; i++){
+		int num;
+		cin >> num;
+		cout << cardCnt[num];
+		if(i < m - 1){
+			cout << " ";
 		}
-
-		card.pop_front();
-		int a = card.front();
-		card.pop_front();
-		card.push_back(a);
 	}
-
-	cout << card[0];
     
     return 0;
 }
