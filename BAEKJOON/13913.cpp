@@ -1,0 +1,77 @@
+#define DEBUG 0
+#define LOG(string) cout << string
+
+#include <iostream>
+#include <cstring>
+#include <queue>
+#include <deque>
+
+using namespace std;
+
+int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    int moveCnt[100001];
+    for(int i = 0 ; i <= 100001 ; i++) moveCnt[i] = 1000000;
+    
+    int startPos, targetPos;
+    cin >> startPos >> targetPos;
+
+    queue<int> posQueue;
+    posQueue.push(startPos);
+    moveCnt[startPos] = 0;
+
+    // BFS
+    while(!posQueue.empty()){
+        int curSize = posQueue.size();
+    
+        for(int i = 0 ; i < curSize ; i++){
+            int pos = posQueue.front();
+
+            if(pos - 1 >= 0 && moveCnt[pos-1] > moveCnt[pos]) {
+                moveCnt[pos-1] = moveCnt[pos] + 1; 
+                posQueue.push(pos-1);
+            }
+            if(pos + 1 <= 100000 && moveCnt[pos+1] > moveCnt[pos]) {
+                moveCnt[pos+1] = moveCnt[pos] + 1; 
+                posQueue.push(pos+1);
+            }
+            if(pos * 2 <= 100000 && moveCnt[pos*2] > moveCnt[pos]) {
+                moveCnt[pos*2] = moveCnt[pos] + 1; 
+                posQueue.push(pos*2);
+            }
+            posQueue.pop();
+        }
+    }
+
+    // 경로 역추적
+    int cur = targetPos;
+    deque<int> route;
+    while(true){
+        route.push_front(cur);
+        
+        if(cur == startPos) break;
+
+        if(cur - 1 >= 0 && moveCnt[cur] - 1 == moveCnt[cur-1]){
+
+            cur = cur - 1;
+            continue;
+        }
+        if(cur + 1 <= 100000 && moveCnt[cur] - 1 == moveCnt[cur+1]){
+            cur = cur + 1;
+            continue;
+        }
+        if(cur % 2 == 0 && moveCnt[cur] - 1 == moveCnt[cur/2]){
+            cur = cur / 2;
+            continue;
+        }
+    }
+
+    cout << moveCnt[targetPos] << "\n";
+    for(int i : route){
+        cout << i << " ";
+    }
+
+    return 0;
+}
