@@ -9,13 +9,9 @@
 
 using namespace std;
 
-void dfs(int height, int continueCnt);
-
 int n;
 int score[301];
 int dp[301];
-vector<int> stairs;
-int answer;
 
 int max(int a, int b){
 	return a > b ? a : b;
