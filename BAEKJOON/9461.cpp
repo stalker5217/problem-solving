@@ -2,10 +2,6 @@
 #define LOG(string) cout << string
 
 #include <iostream>
-#include <cstring>
-#include <vector>
-#include <algorithm>
-#include <functional>
 
 using namespace std;
 
