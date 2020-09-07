@@ -14,7 +14,6 @@ int main(){
 	while(true){
 		int target;
 		cin >> target;
-
 		if(target == 0) break;
 
 		if(target % n == 0) cout << target << " is a multiple of " << n << ".\n";
