@@ -11,7 +11,7 @@ using namespace std;
 int vertexCnt, pathCnt;
 int adj[401][401];
 
-void bellmanFord();
+void floydWarshall();
 
 int main(){
     ios_base::sync_with_stdio(false);
@@ -33,7 +33,7 @@ int main(){
         adj[startV][destV] = weight;
     }
 
-    bellmanFord();
+    floydWarshall();
 
     int answer = INF;
     for(int i = 1 ; i <= vertexCnt ; i++){
@@ -51,7 +51,7 @@ int main(){
     return 0;
 }
 
-void bellmanFord(){
+void floydWarshall(){
     for(int k = 1 ; k <= vertexCnt ; k++){
         for(int i = 1 ; i <= vertexCnt ; i++){
             for(int j = 1 ; j <= vertexCnt ; j++){
