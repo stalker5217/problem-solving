@@ -55,7 +55,8 @@
         "xlocinfo": "cpp",
         "xlocnum": "cpp",
         "xmemory": "cpp",
-        "xtr1common": "cpp"
+        "xtr1common": "cpp",
+        "unordered_set": "cpp"
     },
     "files.autoGuessEncoding": true,
 }
