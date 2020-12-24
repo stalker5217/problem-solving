@@ -28,8 +28,3 @@ public:
         return answer;
     }
 };
-
-int main(){
-	Solution s;
-	cout << s.strStr("", "a");
-}
