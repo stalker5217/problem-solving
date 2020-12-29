@@ -1,7 +1,5 @@
-#include <string>
 #include <algorithm>
 #include <unordered_set>
-#include <iostream>
 
 using namespace std;
 
@@ -28,8 +26,3 @@ public:
 		return answer;
     }
 };
-
-int main(){
-	Solution s;
-	cout << s.lengthOfLongestSubstring("pwwkew");
-}
