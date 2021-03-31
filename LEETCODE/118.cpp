@@ -1,5 +1,4 @@
 #include <vector>
-#include <iostream>
 
 using namespace std;
 
@@ -20,15 +19,3 @@ public:
         return pascalTriangle;
     }
 };
-
-int main(){
-	Solution s;
-	vector<vector<int> > result = s.generate(5);
-
-	for(int i = 0 ; i < result.size() ; i++){
-		for(int j = 0 ; j < result[i].size() ; j++){
-			cout << result[i][j] << " ";
-		}
-		cout << "\n";
-	}
-}
