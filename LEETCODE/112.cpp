@@ -13,8 +13,8 @@ class Solution {
 public:
     bool hasPathSum(TreeNode* node, int targetSum) {
         if(node == nullptr) return false;
-        if(node->left == nullptr && node->right == nullptr && targetSum == node->val) return true;
-        return 
+        else if(node->left == nullptr && node->right == nullptr && targetSum == node->val) return true;
+        else return 
             hasPathSum(node->left, targetSum - node->val) 
             || 
             hasPathSum(node->right, targetSum - node->val);
