@@ -1,4 +1,10 @@
+# ignore list
 *.exe
 *.txt
+
+# setting
+.vscode/
+
+# private folder
 CODEFORCE/
 EXAM/
