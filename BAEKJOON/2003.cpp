@@ -18,14 +18,11 @@ int main(){
 	int sum = 0;
 	int answer =  0;
 	while(start <= end){
-		if(sum == target) answer++;
-		
 		if(sum >= target) sum -= arr[start++];
-		else if(sum < target){
-			if(end >= cnt) break;
-			sum += arr[end++];
-		}
-
+		else if(end == cnt) break;
+		else sum += arr[end++];
+		
+		if(sum == target) answer++;
 	}
 
 	cout << answer;
