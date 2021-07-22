@@ -37,7 +37,7 @@ int main(){
 		}
 	}
 
-	int answer = (1 << 10);
+	int answer = (1 << 10) + 1;
 
 	// 첫 번째 행의 모든 경우의 수
 	for(int step = 0 ; step < (1 << 10) ; step++) {
@@ -72,7 +72,7 @@ int main(){
 		if(allOff) answer = min(answer, count);
 	}
 
-	answer = (answer == (1 << 10)) ? -1 : answer;
+	answer = (answer == (1 << 10) + 1) ? -1 : answer;
 	cout << answer;
     
     return 0;
