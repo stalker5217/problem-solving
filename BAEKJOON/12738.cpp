@@ -16,7 +16,7 @@ int main(){
 	cin >> n;
 
 	vector<int> lis;
-	lis.push_back(-1000000000);
+	lis.push_back(-1000000001);
 
 	for(int i = 0 ; i < n ; i++){
 		int cur;
