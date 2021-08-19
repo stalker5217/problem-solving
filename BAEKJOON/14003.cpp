@@ -20,7 +20,7 @@ int main(){
 	vector<int> lis;
 	vector<pair<int, int> > lisIdxValPair;
 	
-	lis.push_back(-1000000000);
+	lis.push_back(-1000000001);
 	for(int i = 0 ; i < n ; i++){
 		int cur;
 		cin >> cur;
