@@ -23,6 +23,7 @@ int main(){
 		cin >> temp;
 		source.push_back(temp);
 	}
+    sort(source.begin(), source.end());
 
 	cin >> M;
 	for(int i = 0 ; i < M ; i++){
@@ -32,17 +33,9 @@ int main(){
 	}
 
 	for(int i = 0 ; i < target.size() ; i++){
-		vector<int>::iterator mIter = find(source.begin(), source.end(), target[i]);
-		if(*mIter != 0){
-			cout << 1 << "\n";
-		}
-		else
-		{
-			cout << 0 << "\n";
-		}
-		
+		if(binary_search(source.begin(), source.end(), target[i])) cout << 1 << "\n";
+		else cout << 0 << "\n";
 	}
 
-    
     return 0;
 }
