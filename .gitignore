@@ -1,5 +1,11 @@
-# ignore list
+# [Windows] Ignore Execution File
 *.exe
+
+# [Mac OS] Ignore Execution File
+*
+!/**/
+!*.*
+
 *.txt
 
 # setting
